@@ -3,17 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>Twitter laboratoria</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="/css/master.css"> -->
   </head>
   <body>
-    <div>
-      <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="areaMensaje"></textarea>
-      <button type="button" name="button" class="enviarMensaje">Enviar Mensaje</button>
-    </div>
-    <div class="contenedorMensaje">
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-text" href="#">TO DO</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <section class="col-md-2">
+      </section>
+      <section class="container">
+        <form id="to-do-form">
+          <div class="form-group">
+            <label for="mensaje">TO DO:</label>
+            <textarea id="mensaje" name="message" class="form-control" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default" id="btnEnviar" disabled="true">Agregar</button>
+        </form>
+      </section>
 
     </div>
-    <script type="text/javascript" src=assets/js/jquery-3.2.1.min.js></script>
-    <script type="text/javascript" src="assets/js/appjq.js"></script>
+
+
+    <section id="posts" class="container">
+	  </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src=assets/js/bootstrap.min.js></script>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/appjq.js"></script> -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
   </body>
 </html>
